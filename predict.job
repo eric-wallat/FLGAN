@@ -1,0 +1,8 @@
+#!/bin/bash
+
+ENVNAME=mlpackage
+ENVDIR=$ENVNAME
+conda activate $ENVNAME
+run="python predictOpt.py"
+echo $run
+$run
