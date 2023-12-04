@@ -199,8 +199,8 @@ def resize_volume(img, w, h, d):
 def process_scan(path, norm, w, h, d):
     """Read and resize volume"""
     # Read scan
-    #volume = read_nifti_file(path)
-    volume = path
+    volume = read_nifti_file(path)
+    #volume = path
     # Normalize
     if norm == 0:
         volume = normalize_ct(volume)
